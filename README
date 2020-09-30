@@ -1,0 +1,45 @@
+MSSpray is used to conduct password spray attacks against Azure AD as well as validate the implementation of MFA on Azure and Office 365 endpoints
+
+----------------------------------------------------------------------------------------------------------------------                                    
+Usage:                                                                                                                                                    
+                                                                                                                                                          
+Perform a password spray against the <endpoint_selection> with supplied <userfile> and <password> with the option to stop on success <stop>:              
+  python3 msspray.py spray <userfile> <password> <endpoint_selection> <stop/blank>                                                                        
+                                                                                                                                                          
+Check each endpoint for authentication with a valid <username> and <password>:                                                                            
+  python3 msspray.py validate <username> <password>                                                                                                       
+                                                                                                                                                          
+----------------------------------------------------------------------------------------------------------------------                                    
+Endpoints (Default is [1]):                                                                                                                               
+                                                                                                                                                          
+  Number Name                 Endpoint                                                                                                                    
+                                                                                                                                                          
+  [1]    aad_graph_api        https://graph.windows.net                                                                                                   
+  [2]    ms_graph_api         https://graph.microsoft.com                                                                                                 
+  [3]    azure_mgmt_api       https://management.azure.com                                                                                                
+  [4]    windows_net_mgmt_api https://management.core.windows.net                                                                                         
+  [5]    cloudwebappproxy     https://proxy.cloudwebappproxy.net/registerapp    
+  [6]    officeapps           https://officeapps.live.com                       
+  [7]    outlook              https://outlook.office365.com                     
+  [8]    webshellsuite        https://webshell.suite.office.com                 
+  [9]    sara                 https://api.diagnostics.office.com                
+  [10]   office_mgmt          https://manage.office.com                         
+  [11]   msmamservice         https://msmamservice.api.application              
+  [12]   spacesapi            https://api.spaces.skype.com                      
+  [13]   datacatalog          https://datacatalog.azure.com                     
+  [14]   database             https://database.windows.net                      
+  [15]   AzureKeyVault        https://vault.azure.net                           
+  [16]   onenote              https://onenote.com                               
+  [17]   o365_yammer          https://api.yammer.com                            
+  [18]   skype4business       https://api.skypeforbusiness.com                  
+  [19]   o365_exchange        https://outlook-sdf.office.com                    
+----------------------------------------------------------------------------------------------------------------------
+Examples: 
+
+  python3 msspray.py spray users.txt Spring2020 1 stop #spray against https://graph.windows.net, stopping on first successful login
+                                                                                                                                                          
+  python3 msspray.py spray users.txt Spring2020 4 #spray against https://management.core.windows.net
+                                                                                                                                                          
+  python3 msspray.py validate bill.smith@sra.io ReallyBadPass #check all endpoints using valid account
+                                                                                                                                                          
+----------------------------------------------------------------------------------------------------------------------
