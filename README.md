@@ -55,4 +55,4 @@ Check each endpoint for authentication with a valid username and password:
 
 ---
 
-For any questions, feel free to reach out to me on Twitter @__TexasRanger
+For any questions, feel free to reach out to me on Twitter [@__TexasRanger](https://twitter.com/__TexasRanger)
