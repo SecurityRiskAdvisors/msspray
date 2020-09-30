@@ -312,7 +312,7 @@ def help_menu():
 	print("Examples: \n")
 	print(yellow("  python3 msspray.py spray users.txt Spring2020 1 stop #spray against https://graph.windows.net, stopping on first successful login\n"))
 	print(yellow("  python3 msspray.py spray users.txt Spring2020 4 #spray against https://management.core.windows.net\n"))
-	print(yellow("  python3 msspray.py validate bill.smith@sra.io ReallyBadPass #check all endpoints using valid account\n"))
+	print(yellow("  python3 msspray.py validate bill.smith@microsoft.com ReallyBadPass #check all endpoints using valid account\n"))
 	print("----------------------------------------------------------------------------------------------------------------------")
 
 
