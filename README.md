@@ -54,3 +54,5 @@ Check each endpoint for authentication with a valid username and password:
 `python3 msspray.py validate bill.smith@sra.io ReallyBadPass` `#check all endpoints using valid account`
 
 ---
+
+For any questions, feel free to reach out to me on Twitter @__TexasRanger
