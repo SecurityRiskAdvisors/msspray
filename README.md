@@ -46,12 +46,17 @@ Check each endpoint for authentication with a valid username and password:
  
 ---
 ## Examples
+spray against https://graph.windows.net, stopping on first successful login
 
-`python3 msspray.py spray users.txt Spring2020 1 stop` `#spray against https://graph.windows.net, stopping on first successful login`
+`python3 msspray.py spray users.txt Spring2020 1 stop`
 
-`python3 msspray.py spray users.txt Spring2020 4` `#spray against https://management.core.windows.net`
+spray against https://management.core.windows.net
 
-`python3 msspray.py validate bill.smith@sra.io ReallyBadPass` `#check all endpoints using valid account`
+`python3 msspray.py spray users.txt Spring2020 4`
+
+check all endpoints using valid account
+
+`python3 msspray.py validate bill.smith@sra.io ReallyBadPass`
 
 ---
 
