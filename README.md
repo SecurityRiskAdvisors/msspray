@@ -60,4 +60,6 @@ check all endpoints using valid account
 
 ---
 
+Blog Post: https://sra.io/blog/msspray-wait-how-many-endpoints-dont-have-mfa/
+
 For any questions, feel free to reach out to me on Twitter [@__TexasRanger](https://twitter.com/__TexasRanger)
