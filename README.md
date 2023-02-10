@@ -1,3 +1,5 @@
+***Note: This repository is no longer being developed***
+
 # msspray.py
 MSSpray is used to conduct password spray attacks against Azure AD as well as validate the implementation of MFA on Azure and Office 365 endpoints
 ```
